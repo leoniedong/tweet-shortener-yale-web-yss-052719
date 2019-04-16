@@ -16,7 +16,7 @@ def word_substituter(string)
   array.map do |word|
     dictionary.map do |key, value|
       if word == key
-        word = value
+        word.replace(value)
       end
     end
     end
